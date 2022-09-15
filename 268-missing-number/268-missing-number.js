@@ -17,12 +17,15 @@ for(let i=0;i<nums.length;i++){
     // counter to check if all numbers in range [0,n] is found or not
   
     let count =0;
-    
-    for(let i=0;i<=nums.length;i++){
-      if(results.get(i)!=count) // if number is not found 
-      return count; // return missing number
+    while(count<=nums.length){
+// if number is not found 
+ if(results.get(count)!=count) 
+     // return missing number
+     
+      return count; 
       count++;
-      }
+    }
+  
    
 
 };
