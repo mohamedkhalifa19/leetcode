@@ -7,7 +7,7 @@ nums = nums.sort((x,y)=>x-y);
 
 const results =new Map();
 
-
+// create map to contain 
 for(let i=0;i<nums.length;i++){
   results.set(i,nums[i])
 }
