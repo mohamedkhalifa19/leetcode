@@ -4,13 +4,13 @@
  */
 var myAtoi = function(s) {
 s =s.trim();
-let ans="0";
+let ans = "0";
 let Positve = false , negative = false;
     if (s[0] == '-')
         negative = true;
     else if (s[0]== '+')
         Positve = true;
-        else if (s[0]-'0'>=0 && s[0]-'0'<=9 && s[0]!='-' && s[0]!='+')
+        else if (s[0]-'0'>=0 && s[0]-'0'<=9 && s[0]!='-' &&         s[0]!='+')
         ans=s[0];
     else 
         return ans;
