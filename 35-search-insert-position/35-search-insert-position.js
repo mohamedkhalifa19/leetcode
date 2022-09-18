@@ -8,7 +8,7 @@ var searchInsert = function(nums, target) {
     if (target < nums[left]) return 0;
     if (target > nums[right]) return nums.length;
     while(left<=right){
-        let mid = Math.floor((left+right)/2);
+        let mid = (left+right)>>1;
         if(target == nums[mid]) return mid;
         else if(target>nums[mid])
             left = mid+1;
