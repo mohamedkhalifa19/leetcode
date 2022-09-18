@@ -14,5 +14,5 @@
        else
        ans.push(s[i]);
 }
-return (ans.length==0);
+return (ans.length===0);
 };
