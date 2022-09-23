@@ -9,7 +9,7 @@
     if(nums[l]<nums[r])
         {
             res = Math.min(res,nums[l]);
-            break;
+            return res;
         }
     let m =Math.floor((l+r)/2);
     res = Math.min(res,nums[m]);
@@ -18,5 +18,5 @@
     else
     r= m-1;
     }
-    return res;
+     return res;
 };
