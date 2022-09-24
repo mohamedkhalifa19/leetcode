@@ -3,10 +3,16 @@
  * @return {number}
  */
 var peakIndexInMountainArray = function(arr) {
-    for (let i =1;i<arr.length-1;i++){
-        if ((arr[i]>arr[i-1] && arr[i]>arr[i+1] ) || 
-            (arr[i]<arr[i-1] && arr[i]<arr[i+1] )) {
-          return i;
-  }
-    }
+    
+    let maxx_num = Math.max(...arr)
+    
+//     let left = 0 , right = arr.length-1;
+    
+//     while(left<=right){
+//         let mid = Math.floor((left+right/2))
+        
+//         if (arr[mid])
+//     }
+    
+    return arr.indexOf(maxx_num)
 };
