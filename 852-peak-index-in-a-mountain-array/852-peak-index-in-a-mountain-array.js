@@ -4,7 +4,7 @@
  */
 var peakIndexInMountainArray = function(arr) {
     
-    let ans , left =  0 ,right = arr.length-1;
+    let ans=0 , left =  0 ,right = arr.length-1;
     
     while (left<=right){
         let mid = Math.floor((left+right)/2);
