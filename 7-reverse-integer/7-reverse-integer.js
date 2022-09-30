@@ -2,6 +2,14 @@
  * @param {number} x
  * @return {number}
  */
+var maxValue = function(x,y){
+if(x>=y) return x;
+    return y;
+}
+var minValue = function(x,y){
+if(x<=y) return x;
+    return y;
+}
 var reverse = function(x) {
     let reverseNumber =0 , isNegative = false;
     if(x<0){
@@ -13,7 +21,7 @@ var reverse = function(x) {
         x = Math.floor(x/10);
     }
     if(isNegative) reverseNumber*=-1;
-    if(Math.max(reverseNumber,2**31-1) === reverseNumber ||        Math.min(reverseNumber,-(2**31)) === reverseNumber)
+    if(maxValue(reverseNumber,2**31-1) === reverseNumber ||        minValue(reverseNumber,-(2**31)) === reverseNumber)
         return 0;
 return reverseNumber;
 };
