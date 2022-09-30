@@ -7,7 +7,7 @@ var reverse = function(x) {
     if(x<0) isNegative = true;
     x = Math.abs(x);
     while(x!=0){
-        reverseNumber = (reverseNumber * 10)+Math.abs(x%10);
+        reverseNumber = (reverseNumber * 10)+x%10;
         x = Math.floor(x/10);
     }
     if(isNegative) reverseNumber*=-1;
